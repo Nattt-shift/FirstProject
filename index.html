@@ -1,70 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop and Conditional Task</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function checkUserAge() {
-            let age = prompt("Enter your age:");
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SparkPro Cleaning Services offers professional home and small commercial cleaning. Download a free cleaning guide and book your free estimate today." />
+  <meta name="keywords" content="house cleaning services near me, professional home cleaning, residential cleaning, small commercial cleaning" />
+  <title>SparkPro Cleaning Services | Free Cleaning Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 
-            if (age >= 25) {
-                alert("You are 25 years old or older.");
-            } else {
-                alert("You are younger than 25.");
-            }
-        }
+  <!-- Google Analytics Placeholder -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // Replace with live GA4 Measurement ID
+  </script>
 
-        function checkNumber() {
-            let number = prompt("Enter a number:");
-
-            if (number < 100) {
-                alert("You entered a number less than 100.");
-            } else {
-                alert("You entered a number 100 or greater.");
-            }
-        }
-
-        function printNumbers() {
-            for (let i = 0; i <= 30; i++) {
-                document.write(i + "<br>");
-            }
-        }
-
-        function printEvenNumbers() {
-            for (let i = 0; i <= 40; i++) {
-                if (i % 2 === 0) {
-                    document.write(i + "<br>");
-                }
-            }
-        }
-
-        function printDescendingMultiplesOf3() {
-            for (let i = 40; i >= 10; i--) {
-                if (i % 3 === 0) {
-                    document.write(i + "<br>");
-                }
-            }
-        }
-    </script>
+  <!-- Facebook Pixel Placeholder -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '000000000000000'); // Replace with live Pixel ID
+    fbq('track', 'PageView');
+  </script>
 </head>
 <body>
-
-    <div class="container">
-        <h2>05 Task Performance 1</h2>
-        <p>Use the buttons below to interact with the JavaScript loops and conditions.</p>
-
-        <button class="button" onclick="checkUserAge()">Check here if you are 25 years old or Older</button><br><br>
-        <button class="button" onclick="checkNumber()">Check here if Number is Less Than 100</button><br><br>
-        <button class="button" onclick="printNumbers()">Print Numbers 0 to 30</button><br><br>
-        <button class="button" onclick="printEvenNumbers()">Print Even Numbers 0 to 40</button><br><br>
-        <button class="button" onclick="printDescendingMultiplesOf3()">Print Descending Multiples of 3 from 40 to 10</button><br><br>
+  <header class="hero" id="top">
+    <div class="hero-content">
+      <p class="eyebrow">SparkPro Cleaning Services</p>
+      <h1>Get a Spotless Home Without the Stress</h1>
+      <p class="subheadline">Download our FREE “7 Professional Cleaning Secrets That Save You Time &amp; Money” and discover how to keep your home fresh and organized like the pros.</p>
+      <a class="btn btn-primary" href="#lead-form">Download My Free Guide</a>
+      <div class="trust-row">
+        <span class="badge">✔ Fully Insured</span>
+        <span class="badge">✔ Background-Checked Staff</span>
+        <span class="badge">✔ Satisfaction Guarantee</span>
+      </div>
+      <p class="reviews">★★★★★ Rated 5.0 by happy homeowners and local businesses</p>
     </div>
+    <div class="hero-image" role="img" aria-label="Sparkling clean living room with bright natural light"></div>
+  </header>
 
-<footer>
-        <p>Nathaniel L. Gracilla. BSIT602P.  All Rights Reserved.</p>
-    </footer>
+  <main>
+    <section class="lead-capture" id="lead-form">
+      <h2>Get Instant Access to the Free Cleaning Guide</h2>
+      <p>Enter your details below and we’ll send the guide straight to your inbox.</p>
+      <form id="optInForm" class="form-card">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required />
 
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <button type="submit" class="btn btn-primary">Send Me the Free Guide</button>
+        <small>We respect your privacy. No spam. Ever.</small>
+      </form>
+      <p id="formMessage" class="success-message" aria-live="polite"></p>
+    </section>
+
+    <section class="content-section alt">
+      <h2>Tired of Spending Your Weekends Cleaning?</h2>
+      <ul>
+        <li>Dust keeps coming back no matter what you do</li>
+        <li>Deep cleaning feels overwhelming</li>
+        <li>You’re too busy with work and family</li>
+        <li>You don’t know which products actually work</li>
+      </ul>
+      <p class="bold-copy">Our professional system eliminates stress and saves you hours every week.</p>
+    </section>
+
+    <section class="content-section">
+      <h2>Inside This FREE Guide You’ll Discover:</h2>
+      <ul>
+        <li>The 3-step professional cleaning system</li>
+        <li>The biggest mistake homeowners make when disinfecting</li>
+        <li>Budget-friendly tools that actually work</li>
+        <li>How to cut cleaning time in half</li>
+        <li>When it’s smarter to hire professionals</li>
+      </ul>
+    </section>
+
+    <section class="content-section about alt">
+      <div>
+        <h2>Why Homeowners Trust SparkPro Cleaning Services</h2>
+        <p>SparkPro Cleaning Services has helped hundreds of homeowners enjoy cleaner, healthier living spaces without the stress. Our trained professionals use safe, effective methods to deliver consistent results every time.</p>
+        <ul>
+          <li>Fully insured</li>
+          <li>Trained and background-checked cleaners</li>
+          <li>Eco-friendly cleaning options</li>
+          <li>100% satisfaction guarantee</li>
+        </ul>
+      </div>
+      <div class="about-images">
+        <div class="img-card img-1" aria-label="Team member polishing a modern kitchen"></div>
+        <div class="img-card img-2" aria-label="Cleaner sanitizing a bathroom sink"></div>
+      </div>
+    </section>
+
+    <section class="content-section testimonials">
+      <h2>What Customers Are Saying</h2>
+      <div class="testimonial-grid">
+        <blockquote>“SparkPro completely transformed my home. Professional, fast, and reliable!” <cite>– Maria L.</cite></blockquote>
+        <blockquote>“The free guide alone saved me hours every week.” <cite>– James R.</cite></blockquote>
+        <blockquote>“Best cleaning service in the area. Highly recommended!” <cite>– Angela T.</cite></blockquote>
+      </div>
+    </section>
+
+    <section class="content-section soft-offer alt">
+      <h2>Want Us To Do It For You?</h2>
+      <p>Book your FREE in-home cleaning estimate today.</p>
+      <a class="btn btn-secondary" href="#final-cta">Book My Free Estimate</a>
+    </section>
+
+    <section class="content-section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>How much does cleaning cost?</summary>
+        <p>Pricing depends on property size, condition, and service type. We provide a free custom estimate so you only pay for what you need.</p>
+      </details>
+      <details>
+        <summary>Do I need to provide supplies?</summary>
+        <p>No. Our team brings professional-grade products and equipment. We can also use your preferred products upon request.</p>
+      </details>
+      <details>
+        <summary>Are your cleaners insured?</summary>
+        <p>Yes. Every cleaner is trained, background-checked, and covered by our insurance policy for your peace of mind.</p>
+      </details>
+      <details>
+        <summary>How long does a cleaning session take?</summary>
+        <p>Most homes are completed in 2–4 hours depending on square footage and cleaning scope.</p>
+      </details>
+    </section>
+
+    <section class="final-cta" id="final-cta">
+      <h2>Download the Free Guide Now and Start Enjoying a Cleaner Home Today</h2>
+      <a class="btn btn-primary" href="#lead-form">Get Instant Access</a>
+    </section>
+
+    <section class="content-section automation">
+      <h2>Email Automation Setup (Included)</h2>
+      <p>This funnel is ready to connect to your email platform using a webhook endpoint in <code>FORM_ENDPOINT</code> inside the script below.</p>
+      <ol>
+        <li>Connect the opt-in form to Mailchimp, ConvertKit, HubSpot, or ActiveCampaign.</li>
+        <li>Auto-deliver the downloadable PDF guide immediately after submission.</li>
+        <li>Run this suggested follow-up sequence:</li>
+      </ol>
+      <ul>
+        <li>Email 1 (Immediately): Deliver guide + quick win checklist.</li>
+        <li>Email 2 (Day 1): Share common cleaning mistakes and pro tips.</li>
+        <li>Email 3 (Day 3): Case study/testimonial + before/after impact.</li>
+        <li>Email 4 (Day 5): Offer free in-home estimate + limited booking window.</li>
+        <li>Email 5 (Day 7): Final reminder with trust guarantees and booking CTA.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Contact:</strong> (555) 123-4567 | hello@sparkprocleaning.com</p>
+      <p><strong>Service Areas:</strong> Downtown, Northside, Westfield, and surrounding neighborhoods</p>
+      <p class="socials">🔵 Facebook &nbsp; 📸 Instagram &nbsp; 💼 LinkedIn</p>
+      <p>© <span id="year"></span> SparkPro Cleaning Services. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const FORM_ENDPOINT = 'https://example.com/api/lead-capture'; // Replace with your automation/webhook URL
+    const PDF_DOWNLOAD_LINK = 'https://example.com/assets/7-professional-cleaning-secrets.pdf'; // Replace with hosted PDF URL
+
+    const form = document.getElementById('optInForm');
+    const message = document.getElementById('formMessage');
+    const yearEl = document.getElementById('year');
+    yearEl.textContent = new Date().getFullYear();
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      try {
+        await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...payload,
+            source: 'SparkPro lead magnet funnel',
+            interest: 'house cleaning services near me, professional home cleaning'
+          })
+        });
+
+        message.innerHTML = `Success! Check your inbox for the guide. <a href="${PDF_DOWNLOAD_LINK}" target="_blank" rel="noopener">Download directly here</a>.`;
+        message.classList.add('show');
+        form.reset();
+
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead');
+        }
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', { method: 'website_form' });
+        }
+      } catch (error) {
+        message.textContent = 'Thanks! We captured your request. Please call us at (555) 123-4567 if you do not receive the guide within a few minutes.';
+        message.classList.add('show');
+      }
+    });
+  </script>
 </body>
 </html>
