@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop and Conditional Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function checkUserAge() {
+            let age = prompt("Enter your age:");
+
+            if (age >= 25) {
+                alert("You are 25 years old or older.");
+            } else {
+                alert("You are younger than 25.");
+            }
+        }
+
+        function checkNumber() {
+            let number = prompt("Enter a number:");
+
+            if (number < 100) {
+                alert("You entered a number less than 100.");
+            } else {
+                alert("You entered a number 100 or greater.");
+            }
+        }
+
+        function printNumbers() {
+            for (let i = 0; i <= 30; i++) {
+                document.write(i + "<br>");
+            }
+        }
+
+        function printEvenNumbers() {
+            for (let i = 0; i <= 40; i++) {
+                if (i % 2 === 0) {
+                    document.write(i + "<br>");
+                }
+            }
+        }
+
+        function printDescendingMultiplesOf3() {
+            for (let i = 40; i >= 10; i--) {
+                if (i % 3 === 0) {
+                    document.write(i + "<br>");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>05 Task Performance 1</h2>
+        <p>Use the buttons below to interact with the JavaScript loops and conditions.</p>
+
+        <button class="button" onclick="checkUserAge()">Check here if you are 25 years old or Older</button><br><br>
+        <button class="button" onclick="checkNumber()">Check here if Number is Less Than 100</button><br><br>
+        <button class="button" onclick="printNumbers()">Print Numbers 0 to 30</button><br><br>
+        <button class="button" onclick="printEvenNumbers()">Print Even Numbers 0 to 40</button><br><br>
+        <button class="button" onclick="printDescendingMultiplesOf3()">Print Descending Multiples of 3 from 40 to 10</button><br><br>
+    </div>
+
+<footer>
+        <p>Nathaniel L. Gracilla. BSIT602P.  All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
